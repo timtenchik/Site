@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Rososhik Vlad</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+			<!-- Шапка -->
+			<header class="header">
+				<img src="img/logo.png" class="header__logo"></img>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li><a href="#gallery" class="header__link">Галерея</a></li>
+						<li><a href="#product" class="header__link">Товари</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Контент -->
+			<main class="main">
+				<!-- Контент -->
+				<section class="content">
+					<h1>Офіційний сайт Росошика Владислава</h1>
+					<section class="content__gallery gallery">
+						<h2 class="gallery__title" id="gallery">Галерея</h2>
+						<div class="gallery__items">
+							<div class="gallery__item gallery__item_big">
+								<img src="img/01.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/02.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/03.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/04.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/05.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/06.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/07.jpg" alt="">
+							</div>
+							<div class="gallery__item gallery__item_big">
+								<img src="img/08.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/09.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/10.jpg" alt="">
+							</div>
+						</div>
+					</section>
+					<section class="content__products products">
+						<h2 class="products__title" id="product">Товари</h2>
+						
+					</section>
+				</section>
+			</main>
+			
+		</div>
+
+
+		<script src="./js/script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+		<div class="smart-basket__wrapper"></div>
+		
+		<script src="./smartbasket/js/smartbasket.min.js"></script>
+		
+			<script>
+				$(function () {
+					$('.smart-basket__wrapper').smbasket({
+						productElement: 'клас обвертки карточки товара',
+						buttonAddToBasket: 'клас кнопки купить',
+						productPrice: 'product__price-number',
+						productSize: 'product__size-element',
+						
+						productQuantityWrapper: 'product__quantity',
+						smartBasketMinArea: 'класс корзины',
+						countryCode: '+380',
+						smartBasketCurrency: '₴',
+						smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+		
+						agreement: {
+							isRequired: true,
+							isChecked: true,
+							isLink: 'https://artstranger.ru/privacy.html',
+						},
+						nameIsRequired: false,
+					});
+				});
+			</script>
+
+	<div class="container mb-5">
+		<div class="row">
+
+			<!-- Товары -->
+			<div class="col-md-8">
+				<div class="row" id="products-container">
+					
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="01">
+							<img class="product-img" src="img/t_short (1).jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">ФУТБОЛКА З ГЕРБОМ УКРАЇНИ І ФАРБАМИ</h4>
+								<p><small data-items-in-box class="text-muted"></small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">300 ₴</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="02">
+							<img class="product-img" src="img/t_short (2).jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">3D ФУТБОЛКА З УКРАЇНСЬКИМ ВОЇНОМ</h4>
+								<p><small data-items-in-box class="text-muted"></small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">350 ₴</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="03">
+							<img class="product-img" src="img/t_short (3).jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">ФУТБОЛКА З ГЕРБОМ УКРАЇНИ І ФАРБАМИ</h4>
+								<p><small data-items-in-box class="text-muted"></small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">290 ₴</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="04">
+							<img class="product-img" src="img/t_short (4).jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">ФУТБОЛКА З ОГНЕМ ТРИЗУБОМ</h4>
+								<p><small data-items-in-box class="text-muted"></small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">400 ₴</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="05">
+							<img class="product-img" src="img/t_short (5).jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">ФУТБОЛКА ДОБРОГО ВЕЧОРА!</h4>
+								<p><small data-items-in-box class="text-muted"></small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">380 ₴</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="06">
+							<img class="product-img" src="img/t_short (6).jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">ФУТБОЛКА З ЖОВТИМ СЕРЦЕМ</h4>
+								<p><small data-items-in-box class="text-muted"></small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">420 ₴</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Корзина -->
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваше замовлення</h4>
+
+							<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Вартість -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span>
+								<span class="delivery-cost">80 ₴</span><br>
+								<span class="small">Безкоштовно при замовленні від 600 ₴</span>
+							</p>
+							<p><span class="h5">Сумма:</span>
+								<span class="total-price">0</span>
+								<span class="rouble">₴</span></p>
+						</div>
+						<!-- // Вартість -->
+
+					</div>
+
+					<!-- Оформити замовлення -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформити замовлення</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary" onclick="myFunction()">Замовити</button>
+						</form>
+					</div>
+					<!-- // Оформити замовлення -->
+
+				</div>
+				<!-- // Корзина -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer__copy">Copyright © 2022</div>
+		<div class="footer__text">Ukraine</div>
+	</footer>
+
+	<!-- Підключаємо скрипти -->
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+	<script src="./smartbasket/js/smartbasket.min.js"></script>
+	<script>
+		function myFunction() 
+		{
+    	alert("Ваше замовлення відправлено!");
+		}
+	</script>
+
+</body>
+</html>
